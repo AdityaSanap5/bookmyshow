@@ -1,0 +1,73 @@
+/* Light theme (default) */
+body {
+    /*background-color: #ffffff;*/
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+h1, h2, h3, h4, h5, h6, p {
+    color: inherit;
+}
+.custom-scrollbar-minimal::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar-minimal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar-minimal::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 10px;
+}
+
+.custom-scrollbar-minimal::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 100, 100, 0.8);
+}
+
+.custom-scrollbar-minimal {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 100, 100, 0.5) transparent;
+}
+
+@media (max-width: 640px) {
+    .custom-scrollbar-minimal::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .custom-scrollbar-minimal {
+        scrollbar-width: thin;
+    }
+}
+
+.menu-slide {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.menu-slide-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.button-hover {
+    transition: all 0.3s ease-in-out;
+}
+.button-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+#navbar-menu {
+    transition: max-height 0.5s ease-in-out;
+}
+#theme-icon , #theme-icon-lg {
+    transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 1;
+
+}
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.8) rotate(360deg);
+}
